@@ -9,7 +9,7 @@ class TestUnityApp(object):
 
     @classmethod
     def setup_class(cls):
-        cls.browser = webdriver.Chrome(executable_path='/./chromedriver')
+        cls.browser = webdriver.Chrome(executable_path='./chromedriver')
         cls.browser.get('https://my.meest.us/en')
         cls.browser.implicitly_wait(10)
 
