@@ -104,7 +104,10 @@ class TestUnityApp(object):
         summary_calculation = self. \
             __return_visible_element__(By.CSS_SELECTOR, '* .summary-calculation').text
         assert summary_calculation == '$ 76.16'
-
+        
+    def test_does_3_equal_to_GOD(self):
+        assert str(3) == str('GOD')
+    
     @classmethod
     def teardown_class(cls):
         sleep(1)
